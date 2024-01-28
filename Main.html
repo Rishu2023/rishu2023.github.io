@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Mittal's Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+        }
+
+        /* Content Section Styles */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 60px;
+            color: #333;
+            font-size: 75px
+        }
+
+        p {
+            line-height: 1.6;
+            color: #000000;
+            font-size: 19px;
+        }
+
+        mark {
+            background-color: rgba(0, 0, 0, 0);
+            color: #000000;
+        }
+
+        .mountain-image {
+            width: 100%;
+            max-width: 1100px;
+            margin: 20px auto 150px; 
+            display: block;
+        }
+
+        /* About Me Section Styles */
+        .about-me-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .about-me-section img {
+            width: 100%; 
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        .about-me-section .info {
+            width: 60%; 
+            text-align: left;
+            padding: 0 20px; 
+        }
+
+        .info h2 {
+            margin-top: 0; 
+            font-size: 28px;
+        }
+
+        .info p {
+            margin-bottom: 20px;
+            font-size: 18px; 
+        }
+
+        .info a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .info a:hover {
+            text-decoration: underline; 
+        }
+
+        /* Projects Section Styles */
+       .projects-section {
+        margin-top: 40px;
+    }
+
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px; 
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 400px; 
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .project:hover .project-image img {
+        transform: scale(1.1); 
+    }
+
+    .project-details {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .project-details h2 {
+        font-size: 24px; 
+        margin-top: 10px;
+    }
+
+    .project-description {
+        font-size: 16px;
+        color: #666; 
+    }
+.projects-section {
+    margin-top: 40px;
+    max-width: 1200px; 
+    margin: 40px auto; 
+}
+.info a.learn-more-link {
+    text-decoration: underline;
+}
+
+h2.wp-block-heading.alignwide {
+    font-size: 36px;
+    margin-top: 20px; 
+    text-align: left;
+    margin-left: 20px; 
+}
+        /* Lets Chat Section Styles */
+        .lets-chat-section {
+            margin-top: 40px;
+            background-color: #1a1a1a; 
+            color: #ffffff; 
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+
+        .lets-chat-section h2 {
+            background-color: transparent;
+            color: #ffffff;
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+
+        .lets-chat-section p {
+            margin-bottom: 10px; 
+        }
+
+        .lets-chat-section a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+.content {
+    margin-bottom: 0px;
+}
+
+.about-me-section {
+    margin-bottom: 110px;
+}
+
+.projects-section {
+    margin-bottom: 80px;
+}
+
+
+        /* Form Styles */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff; 
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ffffff; 
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        ::placeholder {
+            color: #b3b3b3;
+        }
+
+        ::placeholder.required-placeholder {
+            color: #b3b3b3;
+        }
+
+        ::placeholder#name-placeholder {
+            color: #b3b3b3;
+            font-weight: normal; 
+        }
+
+        input[type="submit"] {
+            background-color: #005AE1; 
+            color: #ffffff; 
+            cursor: pointer;
+            border: none; 
+            outline: none; 
+            padding: 8px 15px; 
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003A81; 
+        }
+
+        input#name {
+            color: #000000; 
+        }
+   .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    margin: 0 20px; 
+}
+
+.social-logo {
+    width: 30px; 
+    height: 30px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1 class="wp-block-heading has-text-align-center">Aryan Mittal</h1>
+        <p class="has-text-align-center">
+            <mark style="background-color:rgba(0, 0, 0, 0);color:#000000" class="has-inline-color">
+                Hey there, welcome to my website! My name is Aryan Mittal. I'm a dedicated grade 10 student with a deep passion for computer programming and mathematics. Over the past four years, I have fully immersed myself in the world of coding, starting with fundamental languages like Python, HTML, CSS, and JavaScript. My journey has also led me to explore more advanced technologies, including NextJS, TypeScript, and React.
+            </mark>
+        </p>
+    </div>
+
+    <!-- Replace the image URLs with the correct ones -->
+    <img src="https://p1.hiclipart.com/preview/995/49/90/mountains-grey-mountain.jpg" alt="Mountain Image" class="mountain-image">
+
+    <div class="about-me-section">
+        <figure class="wp-block-image size-large is-resized">
+            <!-- Replace the image URL with the correct one -->
+            <img src="https://githubcomrishu2023rishu2023github.files.wordpress.com/2024/01/image.png?w=460" alt="About Me Image" class="wp-image-29">
+        </figure>
+        <div class="info">
+            <h2 class="wp-block-heading">
+                <mark style="background-color:rgba(0, 0, 0, 0);color:#000000" class="has-inline-color">
+                    <span style="text-decoration: underline">About Me</span>
+                </mark>
+            </h2>
+            <p>
+                <mark style="background-color:rgba(0, 0, 0, 0);color:#000000" class="has-inline-color">
+                    Welcome to my website! I'm Aryan Mittal, a passionate individual with a strong interest in computer programming and mathematics. Throughout my high school years, I have dedicated myself to immersing in the world of coding, beginning with foundational languages such as Python, HTML, CSS, and JavaScript. My journey has expanded to encompass more advanced technologies, including NextJS, TypeScript, and React. Join me as I continue to explore and expand my skills in the dynamic realm of technology and innovation.
+                </mark>
+            </p>
+            <p class="has-link-color">
+                <strong><a href="https://github.com/Rishu2023">Learn</a></strong><a href="https://github.com/Rishu2023"><strong> more</strong></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="projects-section">
+    <h2 class="wp-block-heading alignwide"><span style="text-decoration: underline">My Projects</span></h2>
+
+    <div class="project">
+        <figure class="project-image">
+            <a href="https://github.com/Rishu2023/CalculatorApp">
+                <img src="https://githubcomrishu2023rishu2023github.files.wordpress.com/2024/01/screen-shot-2024-01-26-at-6.09.40-pm.png" alt="Calculator App" class="wp-image-30">
+            </a>
+        </figure>
+        <div class="project-details">
+            <h2 class="wp-block-heading has-text-align-center has-medium-font-size">Calculator</h2>
+            <p class="project-description">
+                A feature-rich calculator application built using HTML, CSS, and Javascript. It includes some key features.
+            </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <figure class="project-image">
+            <a href="https://github.com/Rishu2023/To-Do-List">
+                <img src="https://githubcomrishu2023rishu2023github.files.wordpress.com/2024/01/screen-shot-2024-01-26-at-6.16.50-pm.png" alt="To-Do List" class="wp-image-34">
+            </a>
+        </figure>
+        <div class="project-details">
+            <h2 class="wp-block-heading has-text-align-center has-medium-font-size">To-Do List</h2>
+            <p class="project-description">
+                A simple and intuitive to-do list application to help you stay organized and manage your tasks efficiently.
+            </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <figure class="project-image">
+            <a href="https://github.com/Rishu2023/ChasingInTheGarden">
+                <img src="https://githubcomrishu2023rishu2023github.files.wordpress.com/2024/01/screen-shot-2024-01-26-at-6.20.54-pm.png?w=731" alt="Snake Game" class="wp-image-36">
+            </a>
+        </figure>
+        <div class="project-details">
+            <h2 class="wp-block-heading has-text-align-center has-medium-font-size">Snake Game</h2>
+            <p class="project-description">
+                Dive into the classic Snake Game, a fun and addictive experience with challenging levels and vibrant graphics.
+            </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <figure class="project-image">
+            <a href="https://github.com/CodeMint-Innovators">
+                <img src="https://githubcomrishu2023rishu2023github.files.wordpress.com/2024/01/98383255169-1.png" alt="CodeMint Innovators" class="wp-image-37">
+            </a>
+        </figure>
+        <div class="project-details">
+            <h2 class="wp-block-heading has-text-align-center has-medium-font-size">CodeMint Innovators</h2>
+            <p class="project-description">
+                Explore the innovative projects and ideas developed by CodeMint Innovators, a collaborative community of creators.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+    <div class="lets-chat-section">
+        <h2 class="wp-block-heading has-background-color has-text-color has-link-color">Let's Chat</h2>
+        <p style="color: #ffffff;">Questions, comments, or requests?</p>
+        <p style="color: #ffffff;">Feel free to reach out, I love to hear.</p>
+        <p style="color: #ffffff;">Toronto, Ontario, Canada</p>
+        <p style="color: #ffffff;"><a href="mailto:rishu108m@gmail.com">rishu108m@gmail.com</a></p>
+
+        <!-- Form Section -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name (required)" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email (required)" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Message (required)" rows="4" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    <div class="social-links">
+    <a href="https://www.linkedin.com/in/aryan-mittal-0050922aa/" target="_blank" class="social-link">
+        <img src="https://png.pngtree.com/element_our/png/20180827/linkedin-social-media-icon-png_71812.jpg" alt="LinkedIn Logo" class="social-logo">
+    </a>
+    <a href="https://medium.com/@rishu108m" target="_blank" class="social-link">
+        <img src="https://icon2.cleanpng.com/20180328/tiw/kisspng-medium-logo-publishing-blog-i-5abb6adc86a881.6127661915222320285516.jpg" alt="Medium Logo" class="social-logo">
+    </a>
+    <a href="https://github.com/Rishu2023" target="_blank" class="social-link">
+        <img src="https://banner2.cleanpng.com/20180326/gxq/kisspng-github-computer-icons-icon-design-github-5ab8a31e334e73.4114704215220498222102.jpg" alt="GitHub Logo" class="social-logo">
+    </a>
+</div>
+    </div>
+
+</body>
+</html>
