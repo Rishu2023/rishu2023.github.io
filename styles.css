@@ -1,0 +1,247 @@
+<style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+        }
+
+        /* Content Section Styles */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 60px;
+            color: #333;
+            font-size: 75px
+        }
+
+        p {
+            line-height: 1.6;
+            color: #000000;
+            font-size: 19px;
+        }
+
+        mark {
+            background-color: rgba(0, 0, 0, 0);
+            color: #000000;
+        }
+
+        .mountain-image {
+            width: 100%;
+            max-width: 1100px;
+            margin: 20px auto 150px; 
+            display: block;
+        }
+
+        /* About Me Section Styles */
+        .about-me-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .about-me-section img {
+            width: 100%; 
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        .about-me-section .info {
+            width: 60%; 
+            text-align: left;
+            padding: 0 20px; 
+        }
+
+        .info h2 {
+            margin-top: 0; 
+            font-size: 28px;
+        }
+
+        .info p {
+            margin-bottom: 20px;
+            font-size: 18px; 
+        }
+
+        .info a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .info a:hover {
+            text-decoration: underline; 
+        }
+
+        /* Projects Section Styles */
+       .projects-section {
+        margin-top: 40px;
+    }
+
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px; 
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 400px; 
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .project:hover .project-image img {
+        transform: scale(1.1); 
+    }
+
+    .project-details {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .project-details h2 {
+        font-size: 24px; 
+        margin-top: 10px;
+    }
+
+    .project-description {
+        font-size: 16px;
+        color: #666; 
+    }
+.projects-section {
+    margin-top: 40px;
+    max-width: 1200px; 
+    margin: 40px auto; 
+}
+.info a.learn-more-link {
+    text-decoration: underline;
+}
+
+h2.wp-block-heading.alignwide {
+    font-size: 36px;
+    margin-top: 20px; 
+    text-align: left;
+    margin-left: 20px; 
+}
+        /* Lets Chat Section Styles */
+        .lets-chat-section {
+            margin-top: 40px;
+            background-color: #1a1a1a; 
+            color: #ffffff; 
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+
+        .lets-chat-section h2 {
+            background-color: transparent;
+            color: #ffffff;
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+
+        .lets-chat-section p {
+            margin-bottom: 10px; 
+        }
+
+        .lets-chat-section a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+.content {
+    margin-bottom: 0px;
+}
+
+.about-me-section {
+    margin-bottom: 110px;
+}
+
+.projects-section {
+    margin-bottom: 80px;
+}
+
+
+        /* Form Styles */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff; 
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ffffff; 
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        ::placeholder {
+            color: #b3b3b3;
+        }
+
+        ::placeholder.required-placeholder {
+            color: #b3b3b3;
+        }
+
+        ::placeholder#name-placeholder {
+            color: #b3b3b3;
+            font-weight: normal; 
+        }
+
+        input[type="submit"] {
+            background-color: #005AE1; 
+            color: #ffffff; 
+            cursor: pointer;
+            border: none; 
+            outline: none; 
+            padding: 8px 15px; 
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003A81; 
+        }
+
+        input#name {
+            color: #000000; 
+        }
+   .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    margin: 0 20px; 
+}
+
+.social-logo {
+    width: 30px; 
+    height: 30px;
+}
+    </style>
